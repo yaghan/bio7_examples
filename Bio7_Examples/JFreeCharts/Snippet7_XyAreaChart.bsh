@@ -1,0 +1,81 @@
+/*
+A JFreeChart example
+see: http://www.jfree.org/jfreechart/ 
+*/
+
+/*
+Sometimes it is necessary to remove variables from the namespace
+of BeanShell(Bsh->Clear)!
+*/ 
+
+double []values={23,24,23,25,56,55,888,233,88,345,234,23,235};
+double []values1={550,240,230,25,560,55,888,233,88,34,234,23,235};
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.XYDataset;
+import org.jfree.data.XYSeries;
+import org.jfree.data.XYSeriesCollection;
+import org.jfree.ui.ApplicationFrame;
+import org.jfree.ui.RefineryUtilities;
+import org.jfree.chart.ChartFrame;
+
+   private JFreeChart createChart(XYDataset dataset) {
+            
+         JFreeChart chart = ChartFactory.createXYAreaChart(
+            "XY Area Chart Demo",
+            "Domain (X)", "Range (Y)",
+            dataset,
+            PlotOrientation.VERTICAL,
+            true,  // legend
+            true,  // tool tips
+            false  // URLs
+        );
+        
+        chart.setBackgroundPaint(Color.white);
+        
+        XYPlot plot = chart.getXYPlot();
+        //plot.setOutlinePaint(Color.black);
+        plot.setBackgroundPaint(Color.lightGray);
+        plot.setForegroundAlpha(0.65f);
+        plot.setDomainGridlinePaint(Color.white);
+        plot.setRangeGridlinePaint(Color.white);
+        
+        ValueAxis domainAxis = plot.getDomainAxis();
+        domainAxis.setTickMarkPaint(Color.black);
+        domainAxis.setLowerMargin(0.0);
+        domainAxis.setUpperMargin(0.0);
+        
+        ValueAxis rangeAxis = plot.getRangeAxis();
+        rangeAxis.setTickMarkPaint(Color.black);
+        
+        return chart;
+        
+    }
+    
+         XYSeries series1 = new XYSeries("Random 1");
+         XYSeries series2 = new XYSeries("Random 2");
+         for (int i = 0; i < values.length; i++) {
+
+         series1.add(new Integer(i), new Double(values[i]));
+         series2.add(new Integer(i), new Double(values1[i]));
+        
+         }
+         
+XYSeriesCollection dataset = new XYSeriesCollection(series1);
+dataset.addSeries(series2);
+JFreeChart chart = createChart(dataset);
+ChartPanel chartPanel = new ChartPanel(chart);
+chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
+ChartFrame demo = new ChartFrame("OpenOffice", chart);
+demo.setContentPane(chartPanel);
+demo.pack();
+RefineryUtilities.centerFrameOnScreen(demo);
+demo.setVisible(true);
+
+ 
+

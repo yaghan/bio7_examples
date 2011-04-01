@@ -1,0 +1,12 @@
+import com.eco.bio7.image.*;
+/*Now we transfer values from the ImageJ analysis to R!*/
+Bio7ImageJAnalyse.fillArrays();
+
+connection=RServe.getConnection();
+connection.assign("StateSoil_area", Bio7ImageJAnalyse.getAREA());
+connection.assign("StateSoil_perimeter", Bio7ImageJAnalyse.getPERIMETER());
+connection.assign("StateSoil_centroidx", Bio7ImageJAnalyse.getCENTROIDX());
+connection.assign("StateSoil_centroidy", Bio7ImageJAnalyse.getCENTROIDY());
+
+Bio7ImageJAnalyse.clearList();
+IJTabs.deleteAllTabs();
