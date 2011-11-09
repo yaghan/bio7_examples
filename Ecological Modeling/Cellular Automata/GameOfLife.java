@@ -15,7 +15,7 @@ import static com.eco.bio7.discrete.Field.*;
 
 
 
-public int n = 1//The neighbourhood value!
+public int n = 1;//The neighbourhood value!
 
 public void ecomain() {
 
