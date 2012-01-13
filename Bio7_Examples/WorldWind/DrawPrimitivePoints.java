@@ -3,7 +3,7 @@ This example demonstrates how to draw point primitives
 dynamically and georeferenced!
 Open the WorldWind perspective compile this file and enable a dynamic layer.
 Fly to Germany and adjust the elevation!
-The WorldWind perspective has to be active in Bio7 1.4!
+The WorldWind perspective has to be active since Bio7 1.4!
 */
 import gov.nasa.worldwind.*;
 import gov.nasa.worldwind.avlist.*;
