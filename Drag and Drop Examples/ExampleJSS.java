@@ -4,7 +4,7 @@ import static com.eco.bio7.spatial.SpatialUtil.*;
 int[] x; 
 int[] y; 
 int[] z;
-
+/*Setup method to start the R server and to open the 3d perspective!*/
 public void setup() {
 	if (RServe.isConnected() == false) {
 		Bio7Action.callRserve();
