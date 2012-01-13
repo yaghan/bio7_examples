@@ -1,0 +1,5 @@
+Simply drag the *.exml files on GUI interface of Bio7 (except the editor area!).
+The Java source in the *.exml file will be automatically compiled and the regular
+Java setup method will be invoked. The source is availabe in the  *.java file.
+
+Flash Tutorial: http://www.uni-bielefeld.de/biologie/Oekosystembiologie/bio7app/flashtut/gridmodels.htm
