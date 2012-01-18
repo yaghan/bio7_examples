@@ -8,6 +8,7 @@ int[] z;
 public void setup() {
 	if (RServe.isConnected() == false) {
 		Bio7Action.callRserve();
+		
 	}
 	Work.openPerspective("com.eco.bio7.perspective_3d");
 
@@ -24,6 +25,7 @@ public void ecomain(GL gl, GLU glu, GLUT glut) {
 /*After a specified time intervall the data is created!*/
 if (canStep()) {
 /*Method to dynamically create the data in R!*/
+
 	createRData(); 	
 }        
 /*Rendering of the data with OpenGL!*/ 	
