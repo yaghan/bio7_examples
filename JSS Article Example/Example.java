@@ -14,7 +14,7 @@ if (canStep()) {
 	createRData(); 	
 }        
 /*Rendering of the data with OpenGL!*/ 	
-if (x != null&&y != null&&z != null) {
+if (x != null && y != null && z != null) {
 	for (int i = 0; i < z.length; i++) { 			
 	/*OpenGL commands to render the data as primitive points!*/
 		gl.glPushMatrix(); 			
