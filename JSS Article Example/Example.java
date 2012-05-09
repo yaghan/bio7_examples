@@ -1,6 +1,6 @@
 import static com.eco.bio7.spatial.SpatialUtil.*;
 
-/*Java container (arrays) for the Data created with R!*/
+/*Java container (arrays) for the data created with R!*/
 int[] x; 
 int[] y; 
 int[] z;
@@ -14,7 +14,7 @@ if (canStep()) {
 	createRData(); 	
 }        
 /*Rendering of the data with OpenGL!*/ 	
-if (z != null) {
+if (x != null&&y != null&&z != null) {
 	for (int i = 0; i < z.length; i++) { 			
 	/*OpenGL commands to render the data as primitive points!*/
 		gl.glPushMatrix(); 			
@@ -33,7 +33,7 @@ public void createRData(){
 RConnection c=RServe.getConnection();
 if (c!=null) {	
 	try { 			
-			/*Creation of random data in R and the transfer to the Java arrays!*/
+	     /*Creation of random data in R and the transfer to the Java arrays!*/
 			x = c.eval("rnorm(100000)*100").asIntegers(); 			
 			y = c.eval("rnorm(100000)*100").asIntegers(); 			
 			z = c.eval("rnorm(100000)*100").asIntegers();  			
