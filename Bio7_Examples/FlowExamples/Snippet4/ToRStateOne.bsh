@@ -1,8 +1,0 @@
-/*Now we transfer values from the patches to R !*/
-Bio7ImageJAnalyse.fillArrays();
-connection=RServe.getConnection();
-connection.assign("StateOne_area", Bio7ImageJAnalyse.getAREA());
-connection.assign("StateOne_perimeter", Bio7ImageJAnalyse.getPERIMETER());
-connection.assign("StateOne_centroidx", Bio7ImageJAnalyse.getCENTROIDX());
-connection.assign("StateOne_centroidy", Bio7ImageJAnalyse.getCENTROIDY());
-Bio7ImageJAnalyse.clearList();

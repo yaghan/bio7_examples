@@ -1,3 +1,0 @@
-System.out.println("Summary first run:");
-RServe.print("summary_one");
-RServe.print("summary_two");

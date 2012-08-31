@@ -1,7 +1,0 @@
-import com.eco.bio7.image.measure.Bio7ImageJAnalyse;
-
-PointPanel.doPaint();// Repaint the Points panel
-Bio7ImageJAnalyse.clearList(); // Delete all previous measurements
-ImageMethods.toImageJ(); // Transfer image from the Points panel for analysis
-
-

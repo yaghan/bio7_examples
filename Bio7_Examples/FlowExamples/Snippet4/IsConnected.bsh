@@ -1,2 +1,0 @@
-while (RServe.isConnected()==false){
-}

@@ -1,6 +1,0 @@
-/*
-We use the ImageJ API to open a URL in a Browser!*/
-
-ij.plugin.BrowserLauncher b = new ij.plugin.BrowserLauncher();
-        
-b.run("http://www.uni-bielefeld.de/biologie/Oekosystembiologie/bio7app/links/index.html");

@@ -1,3 +1,0 @@
-RServe.connection.eval("n1<-L%*%n0");
-RServe.connection.eval("n0<-n1");
-
