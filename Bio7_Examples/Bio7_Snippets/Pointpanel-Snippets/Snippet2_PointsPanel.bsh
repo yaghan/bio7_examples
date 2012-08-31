@@ -1,0 +1,15 @@
+/* This Snippet demonstrates how to get the species in the Points panel 
+and the species name according to the species number!*/
+import java.awt.Point;
+
+int[]species=PointPanel.getSpecies();
+	
+
+for (int i = 0; i < species.length; i++) {
+	
+	
+    System.out.println("specie: "+species[i]+" name: "+PointPanel.getName(species[i]));   
+  
+	
+	
+}
