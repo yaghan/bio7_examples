@@ -33,7 +33,7 @@ ip<-.jcall(im,"Lij/process/ImageProcessor;","getProcessor")
 intValues <- sapply(.jcall(ip,returnSig="[[I","getIntArray"),.jevalArray)
 
 #Transpose the values for the correct image matrix!
-intValues<-t(intValues)#Plot the values with origin in the upper left!
+intValues<-t(intValues)
 
-#Plot the image
+#Plot the values with origin in the upper left!
 image(intValues,useRaster=TRUE,ylim=c(1,0))
