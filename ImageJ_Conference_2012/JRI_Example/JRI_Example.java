@@ -2,6 +2,9 @@
 This JRI example produces an Image in ImageJ from random data produced in R.
 Please note that you can compile and run this example only once in ImageJ!
 
+Reasons:
+JRI can instantiate R only once in a process and R does not support re-inititalization.
+
 Make sure after a compilation that you restart ImageJ!
 
 A second compile leads to a crash of ImageJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
