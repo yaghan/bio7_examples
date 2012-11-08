@@ -57,7 +57,7 @@ public class JRI_Example implements PlugIn {
 		ip.resetMinAndMax();
 		imp = new ImagePlus(name, ip);
 		imp.show();
-
+        re.end();
 	}
 
 }
