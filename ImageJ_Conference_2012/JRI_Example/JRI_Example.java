@@ -24,11 +24,11 @@ import org.rosuda.JRI.REXP;
 
 public class JRI_Example implements PlugIn {
 
-	String args[] = { "--no-save" };
-	String name = "imageMatrix";
-	ImagePlus imp;
-	ImageProcessor ip;
-	public static Rengine re = null;
+	private String args[] = { "--no-save" };
+	private String name = "imageMatrix";
+	private ImagePlus imp;
+	private ImageProcessor ip;
+	private static Rengine re = null;
 
 	public void run(String arg) {
 		if (re == null) {
