@@ -1,0 +1,7 @@
+/*
+Sets the view coordinates of the viewport(scrollpane)in the Points panel.
+Useful if the Points panel has been scaled to a big size and you want to adjust
+some points precisely.
+*/
+
+PointPanel.setViewCoordinates(50000,50000);
