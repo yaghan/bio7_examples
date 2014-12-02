@@ -4,7 +4,7 @@ The coordinates of the selection determine the area in the quadgrid.
 Please scale the quadgrid for a visible result and select a state or plant. 
 Open also a picture before you start and select!*/
 
-import ij.IJ;
+import ij.IJ; 
 import ij.ImageJ;
 import ij.ImagePlus;
 import ij.WindowManager;
