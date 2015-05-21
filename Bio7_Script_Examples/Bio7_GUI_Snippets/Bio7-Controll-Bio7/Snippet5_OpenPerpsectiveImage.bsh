@@ -1,2 +1,0 @@
-/*Opens the perspective with the specified id.*/
-Work.openPerspective("com.eco.bio7.perspective_image");

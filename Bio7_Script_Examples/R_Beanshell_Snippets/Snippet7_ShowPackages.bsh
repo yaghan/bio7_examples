@@ -1,9 +1,0 @@
-/*This example lists all installed packages in R!*/
-
-if(RServe.getConnection()!=null){
-RServe.getConnection().eval("pkg <- list(sort(.packages(all.available = TRUE)))");
-RServe.print("pkg");
-}
-else{
-	System.out.println("No Rserve connection available !");
-}
